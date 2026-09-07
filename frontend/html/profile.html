@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Business Profile | Maharashtra Industrial Support</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="./CSS/profile.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <div class="brand">
+
+        <div class="brand-logo">
+            <span>🇮🇳</span>
+        </div>
+
+        <div class="brand-text">
+            <h2>महाराष्ट्र शासन</h2>
+            <h3>Industrial Support</h3>
+            <p>Approvals and documents.</p>
+        </div>
+
+    </div>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="navigation">
+
+        <a href="./index.html" class="nav-item">
+
+            <i data-lucide="home"></i>
+
+            <div>
+                <span>Home</span>
+                <small>Dashboard</small>
+            </div>
+
+        </a>
+
+
+            <a href="./profile.html" class="nav-item active">
+
+            <i data-lucide="factory"></i>
+
+            <div>
+                <span>Business Profile</span>
+            </div>
+
+        </a>
+
+
+        <a href="./application.html" class="nav-item">
+
+            <i data-lucide="file-check-2"></i>
+
+            <div>
+                <span>Approval Readiness</span>
+            </div>
+
+        </a>
+
+
+        <a href="./document-vault.html" class="nav-item">
+
+            <i data-lucide="vault"></i>
+
+            <div>
+                <span>Document Vault</span>
+                <small>Upload & Reuse</small>
+            </div>
+
+        </a>
+
+
+        <a href="./profile.html" class="nav-item" title="Government Incentives (RAG)">
+
+            <i data-lucide="sparkles"></i>
+
+            <div>
+                <span>Government Incentives</span>
+            </div>
+
+        </a>
+
+
+    </nav>
+
+
+    <!-- SIDEBAR FOOTER -->
+
+    <div class="sidebar-footer">
+
+        <p>Government of Maharashtra</p>
+        <p>Industrial support services</p>
+
+    </div>
+
+</aside>
+        <!-- ================= MAIN ================= -->
+
+        <main class="main">
+
+            <!-- TOP HEADER -->
+
+            <header class="top-header">
+
+                    <div class="header-left"><div class="mobile-title">Industrial Support Platform</div></div>
+
+
+                <div class="header-right">
+
+                    <div class="user-profile">
+                        <div class="user-info">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <!-- ================= CONTENT ================= -->
+
+            <section class="content">
+
+
+                <!-- PAGE HEADER -->
+
+                <div class="page-header">
+
+                    <div>
+
+                        <div class="breadcrumb">
+                            Home / Business Profile
+                        </div>
+
+                        <span class="page-kicker">BUSINESS ONBOARDING</span>
+
+                        <h1>Set up your business profile</h1>
+
+                        <p>
+                            Tell us about your business so we can identify
+                            applicable approvals, documents, incentives and
+                            compliance requirements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROGRESS -->
+
+                <div class="progress-card">
+
+                    <div class="progress-top">
+
+                        <div>
+
+                            <span class="progress-label">
+                                Profile completion
+                            </span>
+
+                            <strong id="progressText">
+                                0% Complete
+                            </strong>
+
+                        </div>
+
+                        <span class="step-text">
+                            Required details
+                        </span>
+
+                    </div>
+
+
+                    <div class="progress-bar">
+
+                        <div class="progress-fill" id="progressFill"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <form id="businessForm">
+
+
+                    <!-- ================= SECTION 1 ================= -->
+
+                    <div class="form-card">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                <i data-lucide="building-2"></i>
+                            </div>
+
+                            <div>
+
+                                <h2>Business Information</h2>
+
+                                <p>
+                                    Basic information about your business.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="form-group full">
+
+                                <label for="businessName">
+                                    Business / Enterprise Name
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="businessName"
+                                    name="businessName"
+                                    placeholder="e.g. ABC Foods Pvt. Ltd."
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="businessType">
+                                    Business Type
+                                    <span>*</span>
+                                </label>
+
+                                <select id="businessType" name="businessType" required>
+
+                                    <option value="">
+                                        Select business type
+                                    </option>
+
+                                    <option value="manufacturing">
+                                        Manufacturing
+                                    </option>
+
+                                    <option value="service">
+                                        Service
+                                    </option>
+
+                                    <option value="trading">
+                                        Trading
+                                    </option>
+
+                                    <option value="startup">
+                                        Startup
+                                    </option>
+
+                                    <option value="msme">
+                                        MSME
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="businessStage">
+                                    Business Stage
+                                    <span>*</span>
+                                </label>
+
+                                <select id="businessStage" name="businessStage" required>
+
+                                    <option value="">
+                                        Select stage
+                                    </option>
+
+                                    <option value="planning">
+                                        Planning / Proposed
+                                    </option>
+
+                                    <option value="setup">
+                                        Setting Up
+                                    </option>
+
+                                    <option value="operational">
+                                        Operational
+                                    </option>
+
+                                    <option value="expansion">
+                                        Expansion
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= SECTION 2 ================= -->
+
+                    <div class="form-card">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                <i data-lucide="factory"></i>
+                            </div>
+
+                            <div>
+
+                                <h2>Industry & Location</h2>
+
+                                <p>
+                                    This information helps determine which
+                                    approvals may apply to your business.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="form-group">
+
+                                <label for="industry">
+                                    Industry
+                                    <span>*</span>
+                                </label>
+
+                                <select id="industry" name="industry" required>
+
+                                    <option value="">
+                                        Select industry
+                                    </option>
+
+                                    <option value="food_processing">
+                                        Food Processing
+                                    </option>
+
+                                    <option value="textile">
+                                        Textile
+                                    </option>
+
+                                    <option value="automobile">
+                                        Automobile
+                                    </option>
+
+                                    <option value="pharmaceutical">
+                                        Pharmaceutical
+                                    </option>
+
+                                    <option value="electronics">
+                                        Electronics
+                                    </option>
+
+                                    <option value="chemical">
+                                        Chemical
+                                    </option>
+
+                                    <option value="it">
+                                        Information Technology
+                                    </option>
+
+                                    <option value="other">
+                                        Other
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="subIndustry">
+                                    Sub-Industry
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="subIndustry"
+                                    name="subIndustry"
+                                    placeholder="e.g. Dairy Products"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="state">
+                                    State
+                                    <span>*</span>
+                                </label>
+
+                                <select id="state" name="state" required>
+
+                                    <option value="">
+                                        Select state
+                                    </option>
+
+                                    <option>Andhra Pradesh</option>
+                                    <option>Arunachal Pradesh</option>
+                                    <option>Assam</option>
+                                    <option>Bihar</option>
+                                    <option>Chhattisgarh</option>
+                                    <option>Goa</option>
+                                    <option>Gujarat</option>
+                                    <option>Haryana</option>
+                                    <option>Himachal Pradesh</option>
+                                    <option>Jharkhand</option>
+                                    <option>Karnataka</option>
+                                    <option>Kerala</option>
+                                    <option>Madhya Pradesh</option>
+                                    <option>Maharashtra</option>
+                                    <option>Manipur</option>
+                                    <option>Meghalaya</option>
+                                    <option>Mizoram</option>
+                                    <option>Nagaland</option>
+                                    <option>Odisha</option>
+                                    <option>Punjab</option>
+                                    <option>Rajasthan</option>
+                                    <option>Sikkim</option>
+                                    <option>Tamil Nadu</option>
+                                    <option>Telangana</option>
+                                    <option>Tripura</option>
+                                    <option>Uttar Pradesh</option>
+                                    <option>Uttarakhand</option>
+                                    <option>West Bengal</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="district">
+                                    District
+                                    <span>*</span>
+                                </label>
+
+                                <select id="district" name="district" required>
+
+                                    <option value="">
+                                        Select district
+                                    </option>
+
+                                    <option>Nashik</option>
+                                    <option>Pune</option>
+                                    <option>Mumbai</option>
+                                    <option>Nagpur</option>
+                                    <option>Aurangabad</option>
+                                    <option>Thane</option>
+                                    <option>Kolhapur</option>
+                                    <option>Satara</option>
+                                    <option>Ahmednagar</option>
+                                    <option>Solapur</option>
+                                    <option>Amravati</option>
+                                    <option>Other</option>
+
+                                </select>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= SECTION 3 ================= -->
+
+                    <div class="form-card">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                <i data-lucide="indian-rupee"></i>
+                            </div>
+
+                            <div>
+
+                                <h2>Business Scale</h2>
+
+                                <p>
+                                    Used to determine applicable schemes,
+                                    approvals and eligibility conditions.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="form-group">
+
+                                <label for="investment">
+                                    Planned Investment
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-with-prefix">
+
+                                    <span>₹</span>
+
+                                    <input
+                                        type="number"
+                                        id="investment"
+                                        name="investment"
+                                        placeholder="50000000"
+                                        min="0"
+                                        required
+                                    >
+
+                                </div>
+
+                                <small>
+                                    Enter amount in Indian Rupees
+                                </small>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="landArea">
+                                    Land Area
+                                    <span>*</span>
+                                </label>
+
+                                <div class="input-with-suffix">
+
+                                    <input
+                                        type="number"
+                                        id="landArea"
+                                        name="landArea"
+                                        placeholder="2"
+                                        min="0"
+                                        step="0.01"
+                                        required
+                                    >
+
+                                    <span>Acres</span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="employees">
+                                    Expected Employees
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="employees"
+                                    name="employees"
+                                    placeholder="45"
+                                    min="1"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="turnover">
+                                    Expected Annual Turnover
+                                </label>
+
+                                <div class="input-with-prefix">
+
+                                    <span>₹</span>
+
+                                    <input
+                                        type="number"
+                                        id="turnover"
+                                        name="turnover"
+                                        placeholder="100000000"
+                                        min="0"
+                                    >
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= SECTION 4 ================= -->
+
+                    <div class="form-card">
+
+                        <div class="section-heading">
+
+                            <div class="section-icon">
+                                <i data-lucide="user-round"></i>
+                            </div>
+
+                            <div>
+
+                                <h2>Contact Information</h2>
+
+                                <p>
+                                    Primary contact person for this business.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+
+                            <div class="form-group">
+
+                                <label for="contactPerson">
+                                    Contact Person
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contactPerson"
+                                    name="contactPerson"
+                                    placeholder="e.g. John Doe"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Mobile Number
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="10 digit mobile number"
+                                    pattern="[0-9]{10}"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                    <span>*</span>
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="business@example.com"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="website">
+                                    Business Website
+                                </label>
+
+                                <input
+                                    type="url"
+                                    id="website"
+                                    name="website"
+                                    placeholder="https://example.com"
+                                >
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= INFORMATION ================= -->
+
+                    <div class="info-box">
+
+                        <div class="info-icon">
+                            <i data-lucide="sparkles"></i>
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Why do we need this information?
+                            </strong>
+
+                            <p>
+                                Your business profile will be used to
+                                personalize your approval roadmap,
+                                identify document requirements, match
+                                government incentives and prepare
+                                applications.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= ACTIONS ================= -->
+
+                    <div class="form-actions">
+
+                        <button
+                            type="button"
+                            class="secondary-button"
+                            onclick="window.location.href='index.html'"
+                        >
+                            Cancel
+                        </button>
+
+                        <button
+                            type="button"
+                            class="danger-button"
+                            id="deleteProfileButton"
+                        >
+                            <i data-lucide="trash-2"></i>
+                            Delete Existing Profile
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="primary-button"
+                            id="submitButton"
+                        >
+
+                            <span>Save & Continue</span>
+
+                            <i data-lucide="arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+
+                <!-- SUCCESS MESSAGE -->
+
+                <div
+                    class="success-message"
+                    id="successMessage"
+                >
+
+                    <div class="success-icon">
+                        <i data-lucide="check"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Business Profile Created</h3>
+
+                        <p>
+                            Your profile has been saved successfully.
+                            Preparing your personalized approval roadmap...
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script>
+
+    // Activate Lucide icons
+    lucide.createIcons();
+
+
+    // Simple navigation active state
+
+    const navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach(item => {
+
+        item.addEventListener("click", function(e) {
+
+            if (this.getAttribute("href") === "#") {
+                e.preventDefault();
+            }
+
+            navItems.forEach(nav => {
+                nav.classList.remove("active");
+            });
+
+            this.classList.add("active");
+
+        });
+
+    });
+
+</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script src="./JS/profile.js"></script>
+
+</body>
+
+</html>

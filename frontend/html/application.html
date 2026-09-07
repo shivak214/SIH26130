@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Readiness | Maharashtra Industrial Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+<div class="app">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-logo"><span>🇮🇳</span></div>
+            <div class="brand-text">
+                <h2>महाराष्ट्र शासन</h2>
+                <h3>Industrial Support</h3>
+                <p>Approvals and documents.</p>
+            </div>
+        </div>
+        <nav class="navigation">
+            <a href="./index.html" class="nav-item"><i data-lucide="home"></i><div><span>Home</span><small>Dashboard</small></div></a>
+            <a href="./profile.html" class="nav-item"><i data-lucide="factory"></i><div><span>Business Profile</span></div></a>
+            <a href="./application.html" class="nav-item active"><i data-lucide="file-check-2"></i><div><span>Approval Readiness</span></div></a>
+            <a href="./document-vault.html" class="nav-item"><i data-lucide="vault"></i><div><span>Document Vault</span><small>Upload &amp; Reuse</small></div></a>
+            <a href="./profile.html" class="nav-item" title="Government Incentives (RAG)"><i data-lucide="sparkles"></i><div><span>Government Incentives</span></div></a>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="maharashtra-art"><span>🏛️</span><span>🏰</span><span>🏢</span></div>
+            <p>महाराष्ट्र औद्योगिक विकासाची</p>
+            <p>|| उद्योजक शक्ती, समृद्ध महाराष्ट्र ||</p>
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="top-header">
+            <div class="header-context">Industrial Support Platform</div>
+            <div class="user-section">
+            </div>
+        </header>
+
+        <section class="content application-content">
+            <div class="application-intro">
+                <a class="back-link" href="./index.html"><i data-lucide="arrow-left"></i> Dashboard</a>
+                <span class="eyebrow">APPLICATION READINESS</span>
+                <h1>Your approval journey</h1>
+                <p>Follow the stages in order. Open an approval to see what is needed, what is blocking it, and what to do next.</p>
+            </div>
+
+            <section class="readiness-section" id="readiness">
+                <div class="readiness-heading">
+                    <div>
+                        <h2>What to do next</h2>
+                        <p>Start with the first available stage, then move forward as each dependency is completed.</p>
+                    </div>
+                    <div class="readiness-progress">
+                        <strong id="progressPercent">0%</strong>
+                        <span id="progressText">0 / 15 Approvals Complete</span>
+                        <div class="readiness-progress-bar"><div id="progressFill"></div></div>
+                    </div>
+                </div>
+                <div id="profileSummary" class="profile-summary"></div>
+                <div id="criticalPath" class="critical-path">Estimated Timeline: 8–9 months (best case)</div>
+                <div id="dependencyGraph" class="dependency-graph"></div>
+                <div id="detailPanel" class="detail-panel"></div>
+            </section>
+        </section>
+    </main>
+</div>
+<script src="./JS/application.js"></script>
+<script>lucide.createIcons();</script>
+</body>
+</html>
